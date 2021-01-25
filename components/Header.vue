@@ -8,23 +8,23 @@
         fixed: fixed || isReduced,
       }"
     >
-      <a href="/" title="Page d'accueil" class="logo">
+      <nuxt-link to="/" class="logo">
         <img src="~/assets/logo-sword.png" alt="Logo Manen" />
-      </a>
+      </nuxt-link>
 
       <nav class="navbar">
-        <a href="/galerie" title="Galerie">
+        <nuxt-link to="/galery">
           <img src="~/assets/nav-galery.png" alt="Logo galerie" />
           Galerie
-        </a>
+        </nuxt-link>
         <a href="/albums" title="Albums">
           <img src="~/assets/nav-album.png" alt="Logo albums" />
           Albums
         </a>
-        <a href="/concerts" title="Concerts">
+        <nuxt-link to="/concerts">
           <img src="~/assets/nav-concert.png" alt="Logo concerts" />
           Concerts
-        </a>
+        </nuxt-link>
         <a href="/contact" title="Contact">
           <img src="~/assets/nav-contact.png" alt="Logo contact" />
           Contact
