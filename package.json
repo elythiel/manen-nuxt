@@ -9,9 +9,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxt/content": "^1.11.1",
     "@nuxtjs/axios": "^5.12.5",
     "core-js": "^3.8.2",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "vue-material-design-icons": "^4.11.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.4.2",

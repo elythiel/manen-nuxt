@@ -1,0 +1,87 @@
+{
+    "title": "Album 2",
+    "cover": "etendues-perdues-back.png",
+    "youtube": "https://localhost:8080",
+    "spotify": "https://localhost:8080",
+    "release": "2019-01-27",
+    "songs": [
+        {
+            "title": "Test de titre 1",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 2"
+        },
+        {
+            "title": "Test de titre 3"
+        },
+        {
+            "title": "Test de titre 4"
+        },
+        {
+            "title": "Test de titre 5"
+        },
+        {
+            "title": "Test de titre 6"
+        },
+        {
+            "title": "Test de titre 7",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 8",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 9",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 10",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 11",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 12",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 12",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 13",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 14",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 15",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 16",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 17",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 18",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 19",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 20"
+        }
+    ]
+}
