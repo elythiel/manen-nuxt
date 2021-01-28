@@ -3,7 +3,7 @@
     <img
       src="~/assets/title-galery.png"
       alt="Logo galerie"
-      class="mx-auto h-44 w-auto"
+      class="mx-auto h-auto w-full md:h-44 md:w-auto"
     />
 
     <no-ssr>

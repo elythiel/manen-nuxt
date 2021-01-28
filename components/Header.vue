@@ -73,27 +73,32 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="postcss" scoped>
 .header {
-  @apply w-full bg-primary flex items-end border-b-4 border-secondary top-0 shadow-lg;
+  @apply w-full bg-primary border-b-4 border-secondary top-0 shadow-lg flex flex-col items-center md:flex-row md:items-end;
+}
+.header .logo {
+  @apply w-2/3 px-4 md:w-auto md:px-4;
 }
 .header .logo img {
-  @apply h-32 w-auto;
+  @apply block w-full h-auto md:h-32 md:w-auto;
 }
 .header .navbar {
-  @apply flex flex-row items-end justify-around text-white uppercase font-playfair text-center text-xl ml-auto;
+  @apply text-white uppercase font-playfair text-center text-xl bg-primary
+    w-full flex flex-row flex-wrap justify-center
+    md:w-auto md:items-center md:justify-around md:ml-auto md:flex-nowrap;
 }
 
 .header .navbar a {
-  @apply px-12;
+  @apply p-2 md:py-0 md:px-12;
 }
 .header .navbar a img {
-  @apply block mx-auto h-16 w-auto;
+  @apply mx-auto h-16 w-auto hidden md:block;
 }
 
 /* navbar dragons */
 .navbar::before,
 .navbar::after {
   content: "";
-  @apply w-24 h-28 block bg-no-repeat bg-contain;
+  @apply hidden w-24 h-28 md:block bg-no-repeat bg-contain;
 }
 .navbar::before {
   background-image: url("~assets/dragon-left.png");
@@ -107,16 +112,16 @@ export default {
   @apply flex-col items-center justify-end;
 }
 .header.h-screen .logo {
-  @apply my-auto;
+  @apply w-full my-auto md:w-auto;
 }
 .header.h-screen .logo img {
-  @apply w-2/3 h-auto mx-auto;
+  @apply w-full md:w-2/3 h-auto mx-auto;
 }
 .header.h-screen .navbar {
-  @apply text-3xl mx-12;
+  @apply md:text-3xl md:mx-12;
 }
 .header.h-screen .navbar a {
-  @apply mb-4;
+  @apply md:mb-4;
 }
 .header.h-screen .navbar a img {
   @apply h-32;
