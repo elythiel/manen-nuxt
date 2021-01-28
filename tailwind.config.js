@@ -27,7 +27,18 @@ module.exports = {
       'serif': ['Libre Baskerville', 'serif'],
       'playfair': ['Playfair Display', 'serif']
     },
-    extend: {}
+    extend: {
+      height: {
+        '150': '37.5rem'
+      },
+      width: {
+        '150': '37.5rem'
+      },
+      maxHeight: {
+        '150': '37.5rem',
+        '5/6': '83.333333%'
+      }
+    }
   },
   variants: {
     extend: {},

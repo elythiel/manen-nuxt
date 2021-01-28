@@ -1,0 +1,57 @@
+{
+    "title": "Etendues perdues",
+    "cover": "etendues-perdues.jpg",
+    "rear": "etendues-perdues-back.png",
+    "youtube": "OLAK5uy_k6g1w8k48200fuwvrMQU3PzW7LJS0wwaI",
+    "spotify": "https://open.spotify.com/album/5lFSsYs15Uxo0iGdoWJvGB?si=j8DrwfUHTqyKLHbVZV6GSA",
+    "release": "2020-01-27",
+    "songs": [
+        {
+            "title": "Etendues perdues",
+            "youtube": "EIv2wnMjKkA",
+            "spotify": "https://open.spotify.com/track/3zPjjtiP0Nt71WwNfjj0Oj?si=wZp38dNPSX2PxpaTf7-ggg",
+            "lyrics": "etendues-perdues/etendues-perdues"
+        },
+        {
+            "title": "Svarta Djup",
+            "youtube": "62E-bJ-2Myo",
+            "spotify": "https://open.spotify.com/track/1QAgVNRHIpTdGfkyJ177Z4?si=2sraPxG2TsWyf5DJlUM8cQ",
+            "lyrics": "etendues-perdues/svarta-djup"
+        },
+        {
+            "title": "Voyage Pour La Gloire",
+            "spotify": "https://open.spotify.com/track/229LnisdLC9mMiS9yeIdWu?si=qtAaOUkjSq-l2zDMA-lBoA",
+            "youtube": "5TSLwlo8RQ8"
+        },
+        {
+            "title": "Vent De Guerre",
+            "spotify": "https://open.spotify.com/track/6wviXTl0vunETrccflcff0?si=dx6fzTJHRsKCZi9RfPSJqw",
+            "youtube": "oVzXXe8Da40"
+        },
+        {
+            "title": "Saison d'Or",
+            "spotify": "https://open.spotify.com/track/6ny1DmrpK3J8og6vE5wtkz?si=HV-ev9TYTn60Bam2FKySQg",
+            "youtube": "Q3mdRVytczI"
+        },
+        {
+            "title": "Aux Abords De l'Océan",
+            "spotify": "https://open.spotify.com/track/65o7KjusuNf4fhTrEp247n?si=M4T2uEbeSUWF_fyNjCsn7Q",
+            "youtube": "hYsNfLw-sgo"
+        },
+        {
+            "title": "Maudit Sabath",
+            "spotify": "https://open.spotify.com/track/0lZY0UBBS9zgIKCe537lZR?si=lrbhoaNMSn-YBqjsphm9_w",
+            "youtube": "tL52G5a1_Tg"
+        },
+        {
+            "title": "Ardente Saison",
+            "spotify": "https://open.spotify.com/track/4TS8eCXkFl0aqaoewdnVBH?si=C1xnCbPxTeq_clafB1WtSA",
+            "youtube": "scLotLoMKiU"
+        },
+        {
+            "title": "Le Navire",
+            "spotify": "https://open.spotify.com/track/5MaZN6gESfEDF3ErKNPLSb?si=hxsvipWUSvu51G50pST60w",
+            "youtube": "QHBHRjJLQDM"
+        }
+    ]
+}

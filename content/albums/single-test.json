@@ -1,0 +1,31 @@
+{
+    "title": "Singles",
+    "cover": "etendues-perdues.jpg",
+    "release": "2018-01-27",
+    "songs": [
+        {
+            "title": "Test de titre 1",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 2",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 2",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 2",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 2",
+            "spotify": "https://localhost:8080"
+        },
+        {
+            "title": "Test de titre 2",
+            "spotify": "https://localhost:8080"
+        }
+    ]
+}
