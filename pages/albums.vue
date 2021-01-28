@@ -3,7 +3,7 @@
     <p v-if="$fetchState.pending">Récupération des albums</p>
     <p v-else-if="$fetchState.error">Une erreur est survenue :(</p>
 
-    <div v-for="album in albums">
+    <div v-for="(album, index) in albums" :key="index">
       <h2 class="text-2xl text-primary mb-4">
         {{ album.title }}
         <a
@@ -30,7 +30,8 @@
           <div class="py-4 h-auto overflow-y-auto">
             <Song
               :song="song"
-              v-for="song in album.songs"
+              v-for="(song, index) in album.songs"
+              :key="index"
               class="py-2 px-16 hover:bg-secondary-light"
             />
           </div>

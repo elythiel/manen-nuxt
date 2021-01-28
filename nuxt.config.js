@@ -1,4 +1,5 @@
 export default {
+  ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'manen-nuxt',
@@ -47,5 +48,6 @@ export default {
   // Nuxt Content values
   content: {
     liveEdit: false
-  }
+  },
+  target: 'static'
 }
