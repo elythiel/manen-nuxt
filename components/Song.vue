@@ -9,14 +9,19 @@
         <nuxt-content :document="lyrics" />
       </Modal>
 
-      <a
-        v-if="song.youtube"
-        href="#"
-        title="Ecouter sur youtube"
-        @click="youtubeActive = true"
-      >
-        <youtube-icon class="text-lg" />
-      </a>
+      <Modal v-if="song.youtube" :frame="false">
+        <template v-slot:button>
+          <youtube-icon class="text-lg" />
+        </template>
+        <iframe
+          width="560"
+          height="315"
+          :src="'https://youtube.com/embed/' + song.youtube"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </Modal>
 
       <a
         v-if="song.spotify"
@@ -26,21 +31,6 @@
       >
         <spotify-icon class="text-lg" />
       </a>
-    </div>
-
-    <div
-      v-if="youtubeActive"
-      class="fixed z-10 h-screen w-screen top-0 left-0 bg-black bg-opacity-25 flex items-center justify-center"
-      @click="youtubeActive = false"
-    >
-      <iframe
-        width="560"
-        height="315"
-        :src="'https://youtube.com/embed/' + song.youtube"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
     </div>
   </div>
 </template>
@@ -54,7 +44,6 @@ export default {
     return {
       lyricsActive: false,
       lyrics: null,
-      youtubeActive: false,
     };
   },
   async fetch() {

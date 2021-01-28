@@ -6,14 +6,19 @@
     <div v-for="(album, index) in albums" :key="index">
       <h2 class="text-2xl text-primary mb-4">
         {{ album.title }}
-        <a
-          v-if="album.youtube"
-          href="#"
-          @click="youtubeActive = true"
-          title="Ecouter sur youtube"
-        >
-          <youtube-icon />
-        </a>
+        <Modal v-if="album.youtube" :frame="false">
+          <template v-slot:button>
+            <youtube-icon class="text-lg" />
+          </template>
+          <iframe
+            width="560"
+            height="315"
+            :src="'https://youtube.com/embed/videoseries?list=' + album.youtube"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </Modal>
         <a v-if="album.spotify" :href="album.spotify" target="_blank" title="">
           <spotify-icon />
         </a>
@@ -37,31 +42,19 @@
           </div>
         </div>
       </div>
-
-      <div
-        v-if="youtubeActive"
-        class="fixed z-10 h-screen w-screen top-0 left-0 bg-black bg-opacity-25 flex items-center justify-center"
-        @click="youtubeActive = false"
-      >
-        <iframe
-          width="560"
-          height="315"
-          :src="'https://youtube.com/embed/videoseries?list=' + album.youtube"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Modal from "~/components/Modal.vue";
+
 export default {
+  components: { Modal },
   data() {
     return {
       albums: [],
-      youtubeActive: false,
     };
   },
   async fetch() {

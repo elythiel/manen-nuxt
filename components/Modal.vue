@@ -9,9 +9,14 @@
       @click="close"
     >
       <div
-        class="relative p-12 bg-white shadow-lg flex flex-col w-1/2 max-h-5/6"
+        class="relative flex flex-col"
+        :class="{ 'bg-white p-12 shadow-lg w-1/2 max-h-5/6': frame }"
       >
-        <button class="absolute top-0 right-0 p-4" @click="active = false">
+        <button
+          v-if="frame"
+          class="absolute top-0 right-0 p-4"
+          @click="active = false"
+        >
           <close-icon />
         </button>
         <h2 v-if="title" class="text-3xl mb-10">{{ title }}</h2>
@@ -27,6 +32,10 @@
 export default {
   props: {
     title: String,
+    frame: {
+      type: Boolean,
+      default: true,
+    },
   },
   data() {
     return {

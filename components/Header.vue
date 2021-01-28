@@ -3,7 +3,7 @@
     <header
       id="header"
       class="header"
-      v-bind:class="{
+      :class="{
         'h-screen': reduce && !isReduced,
         fixed: reduce && isReduced,
       }"
