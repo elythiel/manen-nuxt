@@ -5,30 +5,30 @@
       class="header"
       v-bind:class="{
         'h-screen': reduce && !isReduced,
-        fixed: fixed || isReduced,
+        fixed: reduce && isReduced,
       }"
     >
-      <nuxt-link to="/" class="logo">
+      <nuxt-link to="/" title="Accueil" class="logo">
         <img src="~/assets/logo-sword.png" alt="Logo Manen" />
       </nuxt-link>
 
       <nav class="navbar">
-        <nuxt-link to="/galery">
+        <nuxt-link to="/galery" title="Galerie">
           <img src="~/assets/nav-galery.png" alt="Logo galerie" />
           Galerie
         </nuxt-link>
-        <a href="/albums" title="Albums">
+        <nuxt-link to="/albums" title="Albums">
           <img src="~/assets/nav-album.png" alt="Logo albums" />
           Albums
-        </a>
-        <nuxt-link to="/concerts">
+        </nuxt-link>
+        <nuxt-link to="/concerts" title="Concerts">
           <img src="~/assets/nav-concert.png" alt="Logo concerts" />
           Concerts
         </nuxt-link>
-        <a href="/contact" title="Contact">
+        <nuxt-link to="/" title="Contact">
           <img src="~/assets/nav-contact.png" alt="Logo contact" />
           Contact
-        </a>
+        </nuxt-link>
       </nav>
     </header>
   </div>
@@ -37,34 +37,34 @@
 <script>
 export default {
   name: "Header",
-  props: {
-    reduce: {
-      type: Boolean,
-      default: false,
-    },
-    fixed: {
-      type: Boolean,
-      default: false,
-    },
-  },
   data() {
     return {
+      reduce: false,
       isReduced: false,
     };
   },
   methods: {
     handleScroll() {
-      this.isReduced = window.scrollY > window.innerHeight;
+      if (this.reduce) {
+        this.isReduced = window.scrollY > window.innerHeight;
+      }
+    },
+    isHome() {
+      return this.$nuxt.$route.path == "/";
+    },
+  },
+  watch: {
+    $route() {
+      this.reduce = this.isHome();
     },
   },
   created() {
-    if (this.reduce) {
-      window.addEventListener("scroll", this.handleScroll);
-    }
-  },
-  beforeUnmount() {
-    if (this.reduce) {
-      window.removeEventListener("scroll", this.handleScroll);
+    // handle scroll event
+    window.addEventListener("scroll", this.handleScroll);
+    // trigger once on load
+    if (this.isHome()) {
+      this.reduce = true;
+      this.handleScroll();
     }
   },
 };
@@ -73,27 +73,27 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="postcss" scoped>
 .header {
-  @apply w-full bg-primary flex border-b-4 border-secondary top-0 shadow-lg;
+  @apply w-full bg-primary flex items-end border-b-4 border-secondary top-0 shadow-lg;
 }
-.header .logo {
-  @apply w-1/3 my-auto;
+.header .logo img {
+  @apply h-32 w-auto;
 }
 .header .navbar {
-  @apply flex flex-row items-end justify-around text-white uppercase font-playfair text-center text-2xl ml-auto;
+  @apply flex flex-row items-end justify-around text-white uppercase font-playfair text-center text-xl ml-auto;
 }
 
 .header .navbar a {
-  @apply px-12 py-4;
+  @apply px-12;
 }
 .header .navbar a img {
-  @apply block mx-auto w-24;
+  @apply block mx-auto h-16 w-auto;
 }
 
 /* navbar dragons */
 .navbar::before,
 .navbar::after {
   content: "";
-  @apply w-32 h-40 block bg-no-repeat bg-contain;
+  @apply w-24 h-28 block bg-no-repeat bg-contain;
 }
 .navbar::before {
   background-image: url("~assets/dragon-left.png");
@@ -104,16 +104,22 @@ export default {
 
 /* home page header */
 .header.h-screen {
-  @apply flex-col;
+  @apply flex-col items-center justify-end;
 }
 .header.h-screen .logo {
-  @apply w-2/3 mx-auto;
+  @apply my-auto;
+}
+.header.h-screen .logo img {
+  @apply w-2/3 h-auto mx-auto;
 }
 .header.h-screen .navbar {
   @apply text-3xl mx-12;
 }
+.header.h-screen .navbar a {
+  @apply mb-4;
+}
 .header.h-screen .navbar a img {
-  @apply w-32;
+  @apply h-32;
 }
 .header.h-screen .navbar::before,
 .header.h-screen .navbar::after {
