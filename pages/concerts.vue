@@ -5,6 +5,10 @@
       alt="Logo concerts"
       class="mx-auto w-full h-auto lg:h-44 lg:w-auto"
     />
+    
+    <p v-if="empty" class="text-2xl text-center my-24 text-secondary-dark">
+      Aucun concert n'est prévu pour le moment :(
+    </p>
 
     <no-ssr>
       <div
@@ -51,10 +55,14 @@ export default {
   data() {
     return {
       concerts: [],
+      empty: false
     };
   },
   async fetch() {
     this.concerts = await this.$content("concerts").sortBy('date', 'desc').fetch()
+    if(!this.concerts.length) {
+      this.empty = true
+    }
   },
   mounted() {
     if (typeof this.$redrawVueMasonry === "function") {
