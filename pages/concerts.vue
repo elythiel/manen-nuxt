@@ -1,9 +1,9 @@
 <template>
   <div>
     <img
-      src="~/assets/title-concerts.png"
+      src="~/assets/images/title-concerts.png"
       alt="Logo concerts"
-      class="mx-auto h-44 w-auto"
+      class="mx-auto h-auto w-full md:h-44 md:w-auto"
     />
   </div>
 </template>

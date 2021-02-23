@@ -1,7 +1,7 @@
 <template>
   <div>
     <img
-      src="~/assets/title-galery.png"
+      src="~/assets/images/title-galery.png"
       alt="Logo galerie"
       class="mx-auto h-auto w-full md:h-44 md:w-auto"
     />

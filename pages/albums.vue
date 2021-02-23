@@ -30,7 +30,7 @@
               <Song
                 :song="song"
                 :class="{'border-t border-secondary-light': index > 0}"
-                class="py-4 mx-16"
+                class="py-4 mx-8 lg:mx-16"
               />
             </div>
           </div>
