@@ -2,7 +2,7 @@
   <div>
     <Header />
 
-    <div class="container mx-auto px-24 py-12 text-primary">
+    <div class="container mx-auto px-8 py-4 lg:px-24 lg:py-12 text-primary">
       <Nuxt />
     </div>
   </div>

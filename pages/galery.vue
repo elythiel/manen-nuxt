@@ -3,8 +3,10 @@
     <img
       src="~/assets/title-galery.png"
       alt="Logo galerie"
-      class="mx-auto h-44 w-auto"
+      class="mx-auto w-full h-auto lg:h-44 lg:w-auto"
     />
+
+    <p v-if="empty" class="text-xl text-center my-12 text-secondary-dark">Aucune image n'est disponible pour le moment :(</p>
 
     <no-ssr>
       <div
@@ -19,7 +21,7 @@
           :key="index"
           v-for="(image, index) in images"
         >
-          <img :src="image.path" />
+          <GaleryImage :src="image.path" />
         </div>
       </div>
     </no-ssr>
@@ -31,15 +33,16 @@ import NoSSR from "vue-no-ssr";
 
 export default {
   components: {
-    "no-ssr": NoSSR,
+    "no-ssr": NoSSR
   },
   data() {
     return {
       images: [],
+      empty: false
     };
   },
   async fetch() {
-    const context = require.context("@/assets/galery", true, /^.*\.jpg$/);
+    const context = require.context("@/assets/galery", true, /^.*\.(?:jpg|png)$/);
     context.keys().forEach((key) =>
       this.images.push({
         key: key,
@@ -48,6 +51,9 @@ export default {
     );
   },
   mounted() {
+    if(this.images.length == 0) {
+      this.empty = true;
+    }
     if (typeof this.$redrawVueMasonry === "function") {
       this.$redrawVueMasonry();
     }
