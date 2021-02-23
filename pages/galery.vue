@@ -19,7 +19,7 @@
           :key="index"
           v-for="(image, index) in images"
         >
-          <img :src="image.path" />
+          <GaleryImage :src="image.path" />
         </div>
       </div>
     </no-ssr>
@@ -31,7 +31,7 @@ import NoSSR from "vue-no-ssr";
 
 export default {
   components: {
-    "no-ssr": NoSSR,
+    "no-ssr": NoSSR
   },
   data() {
     return {
