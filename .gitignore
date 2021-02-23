@@ -89,5 +89,5 @@ sw.*
 # Vim swap files
 *.swp
 
-# Galery images
-assets/galery
+# Gallery images
+assets/gallery

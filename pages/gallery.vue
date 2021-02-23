@@ -1,12 +1,14 @@
 <template>
   <div>
     <img
-      src="~/assets/title-galery.png"
+      src="~/assets/title-gallery.png"
       alt="Logo galerie"
       class="mx-auto w-full h-auto lg:h-44 lg:w-auto"
     />
 
-    <p v-if="empty" class="text-xl text-center my-12 text-secondary-dark">Aucune image n'est disponible pour le moment :(</p>
+    <p v-if="empty" class="text-2xl text-center my-12 text-secondary-dark">
+      Aucune image n'est disponible pour le moment :(
+    </p>
 
     <no-ssr>
       <div
@@ -21,7 +23,7 @@
           :key="index"
           v-for="(image, index) in images"
         >
-          <GaleryImage :src="image.path" />
+          <GalleryImage :src="image.path" />
         </div>
       </div>
     </no-ssr>
@@ -42,7 +44,7 @@ export default {
     };
   },
   async fetch() {
-    const context = require.context("@/assets/galery", true, /^.*\.(?:jpg|png)$/);
+    const context = require.context("@/assets/gallery", true, /^.*\.(?:jpg|png)$/);
     context.keys().forEach((key) =>
       this.images.push({
         key: key,
