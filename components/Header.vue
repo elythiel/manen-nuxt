@@ -13,8 +13,8 @@
       </nuxt-link>
 
       <nav class="navbar">
-        <nuxt-link to="/galery" title="Galerie">
-          <img src="~/assets/nav-galery.png" alt="Logo galerie" />
+        <nuxt-link to="/gallery" title="Galerie">
+          <img src="~/assets/nav-gallery.png" alt="Logo galerie" />
           Galerie
         </nuxt-link>
         <nuxt-link to="/albums" title="Albums">
