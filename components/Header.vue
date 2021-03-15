@@ -2,10 +2,10 @@
   <div class="w-full" v-bind:class="{ 'h-screen': reduce }">
     <header
       id="header"
-      class="header w-full bg-primary border-b-4 border-secondary top-0 shadow-lg flex items-end justify-center xl:justify-start xl:px-4"
+      class="header w-full bg-primary border-b-4 border-secondary top-0 shadow-lg flex items-center justify-center xl:items-end xl:justify-start xl:px-4"
       :class="{
         'h-screen': reduce && !isReduced,
-        fixed: reduce && isReduced,
+        'fixed': reduce && isReduced,
       }"
     >
       <nuxt-link
@@ -16,12 +16,12 @@
         <img
           src="~/assets/images/logo-sword.png"
           alt="Logo Manen"
-          class="block w-full h-auto md:h-32 md:w-auto"
+          class="block w-auto h-16 lg:h-24 xl:h-32"
         />
       </nuxt-link>
 
       <navbar class="hidden xl:block font-playfair uppercase text-center text-xl ml-auto" />
-      <navbar-mobile class="block xl:hidden font-playfair uppercase text-center text-xl" />
+      <navbar-mobile class="block xl:hidden font-playfair uppercase text-center text-xl ml-auto" />
     </header>
   </div>
 </template>

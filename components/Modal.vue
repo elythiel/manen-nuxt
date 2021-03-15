@@ -12,7 +12,7 @@
       >
         <div
           class="relative flex flex-col w-5/6 md:w-1/2 max-h-5/6"
-          :class="{ 'bg-white p-12 shadow-lg text-secondary-dark': frame }"
+          :class="{ 'bg-white p-8 lg:p-12 shadow-lg text-secondary-dark': frame }"
         >
           <button
             v-if="frame"
@@ -21,7 +21,7 @@
           >
             <close-icon />
           </button>
-          <h2 v-if="title" class="text-3xl mb-10">{{ title }}</h2>
+          <h2 v-if="title" class="text-3xl mb-5 lg:mb-10">{{ title }}</h2>
           <div class="flex-grow overflow-y-auto text-lg">
             <slot></slot>
           </div>
