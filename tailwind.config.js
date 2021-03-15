@@ -14,6 +14,7 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       gray: colors.trueGray,
+      transparent: 'transparent',
       primary: {
         DEFAULT: '#76939d'
       },
@@ -29,13 +30,13 @@ module.exports = {
     },
     extend: {
       height: {
-        '150': '37.5rem'
+        '150': '40rem'
       },
       width: {
-        '150': '37.5rem'
+        '150': '40rem'
       },
       maxHeight: {
-        '150': '37.5rem',
+        '150': '40rem',
         '5/6': '83.333333%'
       }
     }

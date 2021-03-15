@@ -1,9 +1,9 @@
 <template>
   <div>
     <img
-      src="~/assets/title-concerts.png"
+      src="~/assets/images/title-concerts.png"
       alt="Logo concerts"
-      class="mx-auto w-full h-auto lg:h-44 lg:w-auto"
+      class="mx-auto h-auto w-full md:h-44 md:w-auto"
     />
     
     <p v-if="empty" class="text-2xl text-center my-24 text-secondary-dark">

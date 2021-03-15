@@ -2,9 +2,11 @@
   <div>
     <Header />
 
-    <div class="container mx-auto px-8 py-4 lg:px-24 lg:py-12 text-primary">
+    <div class="container mx-auto px-4 py-4 md:px-0 md:py-12 text-primary">
       <Nuxt />
     </div>
+
+    <portal-target name="modals"></portal-target>
   </div>
 </template>
 

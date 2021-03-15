@@ -1,9 +1,9 @@
 <template>
   <div>
     <img
-      src="~/assets/title-gallery.png"
+      src="~/assets/images/title-gallery.png"
       alt="Logo galerie"
-      class="mx-auto w-full h-auto lg:h-44 lg:w-auto"
+      class="mx-auto h-auto w-full md:h-44 md:w-auto"
     />
 
     <p v-if="empty" class="text-2xl text-center my-12 text-secondary-dark">

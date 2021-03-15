@@ -1,26 +1,19 @@
 <template>
   <div class="flex flex-cols justify-between">
     <span>{{ song.title }}</span>
-    <div>
+    <div class="text-2xl">
       <Modal v-if="song.lyrics" :title="song.title">
         <template v-slot:button>
-          <text-icon class="text-lg" />
+          <text-icon />
         </template>
         <nuxt-content :document="lyrics" />
       </Modal>
 
       <Modal v-if="song.youtube" :frame="false">
         <template v-slot:button>
-          <youtube-icon class="text-lg" />
+          <youtube-icon />
         </template>
-        <iframe
-          width="560"
-          height="315"
-          :src="'https://youtube.com/embed/' + song.youtube"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <youtube :id="song.youtube" />
       </Modal>
 
       <a
@@ -29,7 +22,7 @@
         target="_blank"
         title="Ecouter sur spotify (nouvel onglet)"
       >
-        <spotify-icon class="text-lg" />
+        <spotify-icon />
       </a>
     </div>
   </div>

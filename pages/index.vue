@@ -1,11 +1,11 @@
 <template>
   <div class="text-justify">
     <img
-      src="~/assets/band.png"
+      src="~/assets/images/band.png"
       alt="Photo des membres de Manen"
-      class="mb-12"
+      class="mb-4 md:mb-12"
     />
-    <div class="px-8 my-12">
+    <div class="py-4 md:px-8 md:my-12">
       <p class="mb-2">
         Le groupe Månen est constitué de deux frères à la composition et d'un
         ami à l'écriture.
@@ -33,15 +33,9 @@
       </p>
     </div>
 
-    <iframe
-      class="mx-auto"
-      width="560"
-      height="315"
-      frameborder="0"
-      src="https://www.youtube.com/embed/hYsNfLw-sgo"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+    <div class="mx-auto w-full md:w-1/2">
+      <Youtube id="hYsNfLw-sgo" />
+    </div>
   </div>
 </template>
 
