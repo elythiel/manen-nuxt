@@ -2,7 +2,7 @@
   <div class="w-full" v-bind:class="{ 'h-screen': reduce }">
     <header
       id="header"
-      class="header w-full bg-primary border-b-4 border-secondary top-0 px-4 shadow-lg flex items-center justify-center xl:items-end xl:justify-start xl:px-4"
+      class="header z-10 w-full bg-primary border-b-4 border-secondary top-0 px-4 shadow-lg flex items-center justify-center xl:items-end xl:justify-start xl:px-4"
       :class="{
         'h-screen': reduce && !isReduced,
         'fixed': reduce && isReduced,
@@ -14,6 +14,7 @@
         class="logo"
       >
         <img
+          id="header-logo"
           src="~/assets/images/logo-sword.png"
           alt="Logo Manen"
           class="block w-auto h-16 lg:h-24 xl:h-32"
@@ -43,6 +44,29 @@ export default {
     isHome() {
       return this.$nuxt.$route.path == "/";
     },
+    animate() {
+      this.$gsap.from('#header-logo', {
+        opacity: 0,
+        x: '100%'
+      })
+      // navbar links can be found in Navbar component
+      this.$gsap.from('.navbar-link', {
+        opacity: 0,
+        x: 200,
+        stagger: 0.1,
+        delay: 0.25
+      })
+      this.$gsap.from('.header-dragon', {
+        opacity: 0,
+        y: 200,
+        delay: 0.25
+      })
+    }
+  },
+  mounted() {
+    if(!this.isReduced) {
+      this.animate()
+    }
   },
   watch: {
     $route() {

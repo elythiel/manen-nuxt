@@ -10,7 +10,7 @@
     <button @click="active = false" class="fixed top-0 right-0 text-2xl p-4 rounded z-30 text-black lg-4 lg:text-4xl">
       <close-icon />
     </button>
-    <nuxt-link to="/gallery" title="Galerie" class="py-2 lg:py-4" @click.native="active=false">
+    <nuxt-link to="/gallery" title="Galerie" class="navbar-link py-2 lg:py-4" @click.native="active=false">
       <img
         src="~/assets/images/nav-gallery.png"
         alt="Logo galerie"
@@ -18,7 +18,7 @@
       />
       Galerie
     </nuxt-link>
-    <nuxt-link to="/albums" title="Albums" class="py-2 lg:py-4" @click.native="active=false">
+    <nuxt-link to="/albums" title="Albums" class="navbar-link py-2 lg:py-4" @click.native="active=false">
       <img
         src="~/assets/images/nav-albums.png"
         alt="Logo albums"
@@ -26,7 +26,7 @@
       />
       Albums
     </nuxt-link>
-    <nuxt-link to="/concerts" title="Concerts" class="py-2 lg:py-4" @click.native="active=false">
+    <nuxt-link to="/concerts" title="Concerts" class="navbar-link py-2 lg:py-4" @click.native="active=false">
       <img
         src="~/assets/images/nav-concerts.png"
         alt="Logo concerts"
@@ -34,7 +34,7 @@
       />
       Concerts
     </nuxt-link>
-    <nuxt-link to="/" title="Contact" class="py-2 lg:py-4" @click.native="active=false">
+    <nuxt-link to="/" title="Contact" class="navbar-link py-2 lg:py-4" @click.native="active=false">
       <img
         src="~/assets/images/nav-contact.png"
         alt="Logo contact"
