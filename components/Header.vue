@@ -27,9 +27,9 @@
           src="~/assets/images/dragon-left.png"
           class="dragon hidden h-28 w-auto md:block"
         />
-        <nuxt-link to="/galery" title="Galerie" class="p-2 md:py-0">
+        <nuxt-link to="/gallery" title="Galerie" class="p-2 md:py-0">
           <img
-            src="~/assets/images/nav-galery.png"
+            src="~/assets/images/nav-gallery.png"
             alt="Logo galerie"
             class="mx-auto h-16 w-auto hidden md:block"
           />
