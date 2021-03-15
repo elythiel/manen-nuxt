@@ -18,7 +18,7 @@
         horizontal-order="true"
         class="mt-10"
       >
-        <div v-masonry-tile v-for="(concert, index) in concerts" :key="index" class="masonry-item w-1/2 md:w-1/3 lg:w-1/4 p-2">
+        <div v-masonry-tile v-for="(concert, index) in concerts" :key="index" class="masonry-item w-full md:w-1/2 lg:w-1/4 p-2">
           <div class="bg-white p-8">
             <p> {{ formatDate(concert.date) }} </p>
             <h3 class="text-xl mb-3"> {{ concert.title }} </h3>
