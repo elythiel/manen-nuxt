@@ -2,7 +2,7 @@
   <div class="w-full" v-bind:class="{ 'h-screen': reduce }">
     <header
       id="header"
-      class="header w-full bg-primary border-b-4 border-secondary top-0 shadow-lg flex items-center justify-center xl:items-end xl:justify-start xl:px-4"
+      class="header w-full bg-primary border-b-4 border-secondary top-0 px-4 shadow-lg flex items-center justify-center xl:items-end xl:justify-start xl:px-4"
       :class="{
         'h-screen': reduce && !isReduced,
         'fixed': reduce && isReduced,
@@ -20,7 +20,7 @@
         />
       </nuxt-link>
 
-      <navbar class="hidden xl:block font-playfair uppercase text-center text-xl ml-auto" />
+      <navbar class="hidden xl:block font-playfair uppercase text-center text-xl" />
       <navbar-mobile class="block xl:hidden font-playfair uppercase text-center text-xl ml-auto" />
     </header>
   </div>
@@ -65,7 +65,7 @@ export default {
 <style lang="postcss" scoped>
 /* home page header */
 .header.h-screen {
-  @apply flex-col items-center justify-end;
+  @apply flex-col items-center justify-end px-0;
 }
 .header.h-screen .logo {
   @apply w-full my-auto md:w-auto;

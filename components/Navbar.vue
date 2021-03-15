@@ -1,7 +1,7 @@
 <template>
-<div>
+<div class="navbar ml-auto">
   <nav
-    class="navbar space-x-12 bg-primary text-white flex flex-row items-center justify-around flex-nowrap"
+    class="space-x-12 bg-primary text-white flex flex-row items-center justify-around flex-nowrap"
   >
     <img
       src="~/assets/images/dragon-left.png"
@@ -57,7 +57,7 @@ export default {};
 <style lang="postcss" scoped>
 /* home page header */
 .header.h-screen .navbar {
-  @apply text-3xl w-full;
+  @apply text-3xl w-full ml-0;
 }
 .header.h-screen .navbar a {
   @apply mb-4;
