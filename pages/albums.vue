@@ -17,13 +17,13 @@
         </a>
       </h2>
 
-      <div class="flex flex-col space-y-8 mb-12 lg:flex-row lg:h-150 lg:space-y-0 lg:space-x-8">
+      <div class="flex flex-col mb-12 items-center space-y-4 lg:items-start lg:flex-row lg:space-y-0 lg:space-x-8 xl:h-150 xl:items-stretch">
         <img
           :src="require('~/assets/images/' + album.cover)"
-          class="w-full h-auto lg:w-auto lg:h-150"
+          class="w-1/2 h-auto lg:w-1/6 xl:w-auto xl:h-150"
         />
         <div
-          class="flex-grow flex flex-col w-full lg:w-auto self-center justify-center bg-white text-secondary-dark h-full"
+          class="flex-grow flex flex-col w-full xl:w-auto self-center justify-center bg-white text-secondary-dark h-full"
         >
           <div class="py-4 h-auto overflow-y-auto">
             <div v-for="(song, index) in album.songs" class="group hover:bg-secondary-light">
