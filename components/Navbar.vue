@@ -5,10 +5,10 @@
   >
     <img
       src="~/assets/images/dragon-left.png"
-      class="dragon hidden h-28 w-auto md:block"
+      class="header-dragon hidden h-28 w-auto md:block"
     />
 
-    <nuxt-link to="/gallery" title="Galerie" class="p-2 md:py-0">
+    <nuxt-link to="/gallery" title="Galerie" class="navbar-link p-2 md:py-0">
       <img
         src="~/assets/images/nav-gallery.png"
         alt="Logo galerie"
@@ -16,7 +16,7 @@
       />
       Galerie
     </nuxt-link>
-    <nuxt-link to="/albums" title="Albums" class="p-2 md:py-0">
+    <nuxt-link to="/albums" title="Albums" class="navbar-link p-2 md:py-0">
       <img
         src="~/assets/images/nav-albums.png"
         alt="Logo albums"
@@ -24,7 +24,7 @@
       />
       Albums
     </nuxt-link>
-    <nuxt-link to="/concerts" title="Concerts" class="p-2 md:py-0">
+    <nuxt-link to="/concerts" title="Concerts" class="navbar-link p-2 md:py-0">
       <img
         src="~/assets/images/nav-concerts.png"
         alt="Logo concerts"
@@ -32,7 +32,7 @@
       />
       Concerts
     </nuxt-link>
-    <nuxt-link to="/" title="Contact" class="p-2 md:py-0">
+    <nuxt-link to="/" title="Contact" class="navbar-link p-2 md:py-0">
       <img
         src="~/assets/images/nav-contact.png"
         alt="Logo contact"
@@ -43,7 +43,7 @@
 
     <img
       src="~/assets/images/dragon-right.png"
-      class="dragon hidden h-28 w-auto md:block"
+      class="header-dragon hidden h-28 w-auto md:block"
     />
   </nav>
 </div>
@@ -65,7 +65,7 @@ export default {};
 .header.h-screen .navbar a img {
   @apply h-32;
 }
-.header.h-screen .navbar .dragon {
+.header.h-screen .navbar .header-dragon {
   @apply h-56;
 }
 </style>

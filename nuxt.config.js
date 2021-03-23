@@ -31,7 +31,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    'nuxt-gsap-module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -50,5 +51,43 @@ export default {
   // Nuxt Content values
   content: {
     liveEdit: false
-  }
+  },
+
+  // GSAP configuration
+  gsap: {
+    extraPlugins: {
+      scrollTrigger: true 
+    }
+  },
+
+  // GSAP Global page transition
+  pageTransition: {
+    name: 'page',
+    mode: 'out-in',
+    css: false,
+
+    beforeEnter(el) {
+      this.$gsap.set(el, {
+        opacity: 0
+      })
+    },
+
+    enter(el, done) {
+      this.$gsap.to(el, {
+        opacity: 1,
+        duration: 0.5,
+        ease: 'power2.inOut',
+        onComplete: done
+      })
+    },
+
+    leave(el, done) {
+      this.$gsap.to(el, {
+        opacity: 0,
+        duration: 0.5,
+        ease: 'power2.inOut',
+        onComplete: done
+      })
+    }
+  },
 }
