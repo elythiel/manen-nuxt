@@ -1,13 +1,13 @@
 <template>
-  <div class="flex flex-cols justify-between">
+  <div class="flex flex-cols justify-between items-center">
     <span>{{ song.title }}</span>
     <div class="text-2xl">
-      <Modal v-if="song.lyrics" :title="song.title">
+      <LyricsModal v-if="song.lyrics" :title="song.title" :authors="song.authors" :guests="song.guests">
         <template v-slot:button>
           <text-icon />
         </template>
         <nuxt-content :document="lyrics" />
-      </Modal>
+      </LyricsModal>
 
       <Modal v-if="song.youtube" :frame="false">
         <template v-slot:button>
