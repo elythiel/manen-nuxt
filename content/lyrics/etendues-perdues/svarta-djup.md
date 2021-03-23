@@ -1,25 +1,35 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+I vinden viskar dödens stämma
 
-Ut maximus mauris ex, vitae fringilla tellus commodo quis.
+Onda stjärnor på himmelen stirra
 
-Cras dapibus mollis nisl sed molestie.
+Bland furor eka ett isande skrik
 
-Nulla in ex vel ex imperdiet interdum.
+Urskogens klor I nattlig sky
 
-Aliquam suscipit augue et nulla blandit, sit amet sodales urna efficitur.
+You're rymdens svarta djup
 
-<br>
-
-Morbi justo risus, congue posuere eros fermentum, egestas feugiat justo.
-
-Nullam dignissim feugiat eleifend.
-
-Sed luctus sagittis purus, sit amet gravida est pulvinar finibus.
-
-Praesent sed justo posuere, efficitur diam sit amet, consectetur enim.
-
-In enim nibh, consequat nec magna sit amet, tristique varius lectus.
+You're rymdens svarta djup
 
 <br>
 
-Donec fermentum ultricies nunc in condimentum.
+Fem fot svart stål han I sina nävar klämmer
+
+En svart skugga från jordens djupaste hål
+
+Långa öron och knivskarpa horn
+
+Under brynen glöda två illröda kol...
+
+<br>
+
+Nu lyfts värdet mot himmelens rand
+
+Syndastålet nu frysa luft till is
+
+Nu livlösa förbli var man, var kvinna
+
+Domen falla och tystnad härska
+
+O, rymdens svarta djup
+
+O, rymdens svarta djup

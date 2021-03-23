@@ -1,67 +1,63 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit
+Il y a là dans ce pays des steppes blanches
 
-Ut maximus mauris ex, vitae fringilla tellus commodo quis.
+Immenses glacées ou Hélios
 
-Cras dapibus mollis nisl sed molestie.
-
-Nulla in ex vel ex imperdiet interdum. 
-
-Aliquam suscipit augue et nulla blandit, sit amet sodales urna efficitur
-
-Morbi justo risus, congue posuere eros fermentum, egestas feugiat justo. 
-
-Nullam dignissim feugiat eleifend.
-
-Sed luctus sagittis purus, sit amet gravida est pulvinar finibus.
-
-Praesent sed justo posuere, efficitur diam sit amet, consectetur enim.
-
-Donec fermentum ultricies nunc in condimentum.
+Astre de la vie n’a jamais semblé régner
 
 <br>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit
+Regarde...
 
-Ut maximus mauris ex, vitae fringilla tellus commodo quis.
+Ces mers et ces vallées figées
 
-Cras dapibus mollis nisl sed molestie.
+Gigantesques gorges arides
 
-Nulla in ex vel ex imperdiet interdum. 
+Où des forteresses froides érigées
 
-Aliquam suscipit augue et nulla blandit, sit amet sodales urna efficitur
+Par le givre et les siècles
 
-Morbi justo risus, congue posuere eros fermentum, egestas feugiat justo. 
-
-Nullam dignissim feugiat eleifend.
-
-Sed luctus sagittis purus, sit amet gravida est pulvinar finibus.
-
-Praesent sed justo posuere, efficitur diam sit amet, consectetur enim.
-
-In enim nibh, consequat nec magna sit amet, tristique varius lectus.
-
-Donec fermentum ultricies nunc in condimentum.
+Trônes, fières
 
 <br>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit
+Attendons que les âmes mornes
 
-Ut maximus mauris ex, vitae fringilla tellus commodo quis.
+Rejoignent enfin leurs terres
 
-Cras dapibus mollis nisl sed molestie.
+Attendons que les âmes mornes
 
-Nulla in ex vel ex imperdiet interdum. 
+Rejoignent enfin leurs terres
 
-Aliquam suscipit augue et nulla blandit, sit amet sodales urna efficitur
+<br>
 
-Morbi justo risus, congue posuere eros fermentum, egestas feugiat justo. 
+Il y a là derrière ces gouffres
 
-Nullam dignissim feugiat eleifend.
+Derrière ces constellations
 
-Sed luctus sagittis purus, sit amet gravida est pulvinar finibus.
+Des neiges dures et de souffre
 
-Praesent sed justo posuere, efficitur diam sit amet, consectetur enim.
+Les seuls esprits des nations
 
-In enim nibh, consequat nec magna sit amet, tristique varius lectus.
+Déchues...
 
-Donec fermentum ultricies nunc in condimentum.
+<br>
+
+Anciennes peuplades guerrières
+
+La rage mettant le feu
+
+Aux dernières poudrières
+
+Jusqu'à leur dernier souffle
+
+Disparu...
+
+<br>
+
+Attendons que les âmes mornes
+
+Rejoignent enfin leurs terres
+
+Attendons que les âmes mornes
+
+Rejoignent enfin leurs terres
