@@ -1,4 +1,4 @@
-# manen-nuxt
+# Front-end du projet Manen
 
 ## Build Setup
 
