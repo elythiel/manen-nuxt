@@ -8,6 +8,7 @@ import TextIcon from 'vue-material-design-icons/Text.vue'
 import CloseIcon from 'vue-material-design-icons/Close.vue'
 import OpenInNewIcon from 'vue-material-design-icons/OpenInNew.vue'
 import MenuIcon from 'vue-material-design-icons/Menu.vue'
+import FacebookIcon from 'vue-material-design-icons/Facebook.vue'
 
 export default function materialIcons() {
     Vue.component('youtube-icon', YoutubeIcon)
@@ -16,4 +17,5 @@ export default function materialIcons() {
     Vue.component('close-icon', CloseIcon)
     Vue.component('open-in-new-icon', OpenInNewIcon)
     Vue.component('menu-icon', MenuIcon)
+    Vue.component('facebook-icon', FacebookIcon)
 }

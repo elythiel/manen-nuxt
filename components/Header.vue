@@ -23,6 +23,11 @@
 
       <navbar class="hidden xl:block font-playfair uppercase text-center text-xl" />
       <navbar-mobile class="block xl:hidden font-playfair uppercase text-center text-xl ml-auto" />
+
+      <span class="social-links absolute top-0 right-0  m-4 hidden text-3xl text-white">
+        <SocialLinks />
+      </span>
+
     </header>
   </div>
 </template>
@@ -96,5 +101,8 @@ export default {
 }
 .header.h-screen .logo img {
   @apply w-full md:w-2/3 h-auto mx-auto;
+}
+.header.h-screen .social-links {
+  @apply block;
 }
 </style>

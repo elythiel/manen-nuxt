@@ -8,12 +8,12 @@
         {{ album.title }}
         <Modal v-if="album.youtube" :frame="false">
           <template v-slot:button>
-            <youtube-icon />
+            <youtube-icon class="text-3xl" />
           </template>
           <youtube :list="true" :id="album.youtube" />
         </Modal>
-        <a v-if="album.spotify" :href="album.spotify" target="_blank" title="">
-          <spotify-icon />
+        <a v-if="album.spotify" :href="album.spotify" target="_blank" title="Ecouter sur spotify">
+          <spotify-icon class="text-3xl" />
         </a>
       </h2>
 
@@ -26,7 +26,7 @@
           class="flex-grow flex flex-col w-full xl:w-auto self-center justify-center bg-white text-secondary-dark h-full"
         >
           <div class="py-4 h-auto overflow-y-auto">
-            <div v-for="(song, index) in album.songs" class="group hover:bg-secondary-light">
+            <div v-for="(song, index) in album.songs" :key="index" class="hover:bg-secondary-light">
               <Song
                 :song="song"
                 :class="{'border-t border-secondary-light': index > 0}"
