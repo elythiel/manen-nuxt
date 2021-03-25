@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.4.2",
-    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "@tailwindcss/postcss7-compat": "npm:@tailwindcss/postcss7-compat",
     "autoprefixer": "^9",
     "nuxt-gsap-module": "^1.2.1",
     "postcss": "^7",
