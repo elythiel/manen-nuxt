@@ -72,13 +72,6 @@ export default {
     if(!this.isReduced) {
       this.animate()
     }
-  },
-  watch: {
-    $route() {
-      this.reduce = this.isHome();
-    },
-  },
-  created() {
     // handle scroll event
     window.addEventListener("scroll", this.handleScroll);
     // trigger once on load
@@ -86,6 +79,11 @@ export default {
       this.reduce = true;
       this.handleScroll();
     }
+  },
+  watch: {
+    $route() {
+      this.reduce = this.isHome();
+    },
   },
 };
 </script>

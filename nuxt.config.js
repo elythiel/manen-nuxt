@@ -1,5 +1,7 @@
 export default {
-  ssr: false,
+  //ssr: false,
+  target: 'static',
+
   publicRuntimeConfig: {
     contactEmail: 'manengroupe@gmail.com'
   },
