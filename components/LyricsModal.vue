@@ -45,11 +45,11 @@ export default {
     title: String,
     authors: {
       type: Array,
-      default: [],
+      default: () => []
     },
     guests: {
       type: Array,
-      default: []
+      default: () => []
     }
   },
   data() {

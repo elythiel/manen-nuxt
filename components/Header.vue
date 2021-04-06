@@ -54,18 +54,20 @@ export default {
         opacity: 0,
         x: '100%'
       })
-      // navbar links can be found in Navbar component
-      this.$gsap.from('.navbar-link', {
-        opacity: 0,
-        x: 200,
-        stagger: 0.1,
-        delay: 0.25
-      })
-      this.$gsap.from('.header-dragon', {
-        opacity: 0,
-        y: 200,
-        delay: 0.25
-      })
+        // navbar links can be found in Navbar component
+      if(document.getElementById('navbar-desktop')) {
+        this.$gsap.from('.navbar-link', {
+          opacity: 0,
+          x: 200,
+          stagger: 0.1,
+          delay: 0.25
+        })
+        this.$gsap.from('.header-dragon', {
+          opacity: 0,
+          y: 200,
+          delay: 0.25
+        })
+      }
     }
   },
   mounted() {
