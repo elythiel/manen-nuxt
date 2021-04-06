@@ -52,6 +52,17 @@ export default {
       .sortBy("release", "desc")
       .fetch();
   },
+  head() {
+    return {
+      title: `Albums - ${this.$config.siteTitle}`,
+      meta: [
+        { hid: 'og:title', name: 'og:title', content: `Galerie - ${this.$config.siteTitle}` },
+        { hid: 'og:description', name: 'og:description', content: 'Liste des titres du groupe Manen' },
+        { hid: 'twitter:title', name: 'twitter:title', content: `Concerts - ${this.$config.siteTitle}` },
+        { hid: 'twitter:description', name: 'twitter:description', content: 'Liste des titres du groupe Manen' }
+      ]
+    }
+  }
 };
 </script>
 

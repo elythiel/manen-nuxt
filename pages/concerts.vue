@@ -6,7 +6,7 @@
       class="mx-auto h-auto w-full md:h-44 md:w-auto"
     />
     
-    <p v-if="empty" class="text-2xl text-center my-24 text-secondary-dark">
+    <p v-if="empty" class="text-2xl text-center my-12 text-secondary-dark">
       Aucun concert n'est prévu pour le moment :(
     </p>
 
@@ -72,6 +72,17 @@ export default {
   methods: {
     formatDate(date) {
       return new Date(date).toLocaleDateString()
+    }
+  },
+  head() {
+    return {
+      title: `Concerts - ${this.$config.siteTitle}`,
+      meta: [
+        { hid: 'og:title', name: 'og:title', content: `Galerie - ${this.$config.siteTitle}` },
+        { hid: 'og:description', name: 'og:description', content: 'Liste des concerts du groupe Manen' },
+        { hid: 'twitter:title', name: 'twitter:title', content: `Concerts - ${this.$config.siteTitle}` },
+        { hid: 'twitter:description', name: 'twitter:description', content: 'Liste des concerts du groupe Manen' }
+      ]
     }
   }
 };

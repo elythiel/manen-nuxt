@@ -1,21 +1,33 @@
 export default {
-  //ssr: false,
   target: 'static',
 
   publicRuntimeConfig: {
-    contactEmail: 'manengroupe@gmail.com'
+    contactEmail: 'manengroupe@gmail.com',
+    siteTitle: 'Manen',
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'manen-nuxt',
+    title: 'Site du groupe Manen',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Le groupe Månen est constitué de deux frères à la composition et d\'un ami à l\'écriture. Månen existe depuis une dizaine d\'années, ils se produisent sur de petites scènes en région parisienne.'
+      },
+      { hid: 'og:title', name: 'og:title', content: 'Manen' },{ hid: 'og:image', name: 'og:image', content: process.env.BASE_URL + '/images/logo-sword-1200.jpg'},
+      { hid: 'twitter:title', name: 'twitter:title', content: 'Manen' },
+      { hid: 'og:description', name: 'og:description', content: 'Le groupe Månen existe depuis une dizaine d\'années et se produisent sur de petites scènes en région parisienne.' },
+      { hid: 'twitter:description', name: 'twitter:description', content: 'Le groupe Månen existe depuis une dizaine d\'années et se produisent sur de petites scènes en région parisienne.' },
+      { hid: 'og:image', name: 'og:image', content: '/images/logo-sword-1200.jpg'},
+      { hid: 'twitter:image', name: 'og:image', content: '/images/logo-sword-1200.jpg'},
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "1200" }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
