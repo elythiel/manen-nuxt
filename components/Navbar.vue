@@ -32,14 +32,14 @@
       />
       Concerts
     </nuxt-link>
-    <nuxt-link to="/" title="Contact" class="navbar-link p-2 md:py-0">
+    <a :href="`mailto:${$config.contactEmail}`" title="Contact" class="navbar-link p-2 md:py-0">
       <img
         src="~/assets/images/nav-contact.png"
         alt="Logo contact"
         class="mx-auto h-16 w-auto hidden md:block"
       />
       Contact
-    </nuxt-link>
+    </a>
 
     <img
       src="~/assets/images/dragon-right.png"
