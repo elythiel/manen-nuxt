@@ -1,7 +1,6 @@
 <template>
   <div class="text-justify">
     <img
-      id="index-band-image"
       src="~/assets/images/band.png"
       alt="Photo des membres de Manen"
       class="mb-4 md:mb-12"
@@ -34,35 +33,12 @@
       </p>
     </div>
 
-    <div id="index-youtube-video" class="mx-auto w-full md:w-1/2">
+    <div class="mx-auto w-full md:w-1/2">
       <Youtube id="hYsNfLw-sgo" />
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  methods: {
-    animateOnScroll() {
-      this.$gsap.from('#index-band-image', {
-        opacity: 0,
-        x: -500,
-        scrollTrigger: {
-          trigger: '#index-band-image',
-          end: 'bottom'
-        }
-      })
-      this.$gsap.from('#index-youtube-video', {
-        opacity: 0,
-        scrollTrigger: {
-          trigger: '#index-youtube-video',
-          end: 'bottom'
-        }
-      })
-    }
-  },
-  mounted() {
-    this.animateOnScroll()
-  }
-};
+export default {};
 </script>
