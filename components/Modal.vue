@@ -1,6 +1,6 @@
 <template>
   <div class="inline-block">
-    <a href="#" @click="active = true">
+    <a href="#" @click="open">
       <slot name="button"></slot>
     </a>
 
@@ -17,7 +17,7 @@
           <button
             v-if="frame"
             class="absolute top-0 right-0 p-4"
-            @click="active = false"
+            @click="close"
           >
             <close-icon />
           </button>
@@ -46,7 +46,8 @@ export default {
     };
   },
   methods: {
-    open() {
+    open(event) {
+      event.preventDefault();
       this.active = true;
     },
     close(event) {

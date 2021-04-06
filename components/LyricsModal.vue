@@ -13,7 +13,7 @@
         <div class="relative flex flex-col w-5/6 md:w-1/2 max-h-5/6 between bg-white p-4 lg:py-10 lg:px-12 shadow-lg text-secondary-dark">
           <button
             class="absolute top-0 right-0 p-4"
-            @click="active = false"
+            @click="close"
           >
             <close-icon />
           </button>
@@ -58,8 +58,8 @@ export default {
     };
   },
   methods: {
-    open(e) {
-      e.preventDefault();
+    open(event) {
+      event.preventDefault();
       this.active = true;
     },
     close(event) {

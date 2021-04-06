@@ -1,0 +1,13 @@
+# CONCERTS
+
+This directory contains all concerts.
+Each concert must have its own .json file.
+
+Concert must have follow fields :
+title: Event title
+date: Event date (YYYY-MM-DD format)
+link: Link to concert event page
+location: {
+    title: Location link title
+    link: Location link
+}
