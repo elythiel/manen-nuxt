@@ -1,5 +1,9 @@
 export default {
   ssr: false,
+  publicRuntimeConfig: {
+    contactEmail: 'manengroupe@gmail.com'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'manen-nuxt',

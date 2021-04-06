@@ -1,9 +1,0 @@
-{
-    "title": "Random concert de Test",
-    "date": "2020-11-28",
-    "location": {
-        "title": "Test de lieu",
-        "link": "https://localhost/random-location"
-    },
-    "link": "https://localhost/random-events/2020-11-28"
-}

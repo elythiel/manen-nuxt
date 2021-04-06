@@ -34,14 +34,14 @@
       />
       Concerts
     </nuxt-link>
-    <nuxt-link to="/" title="Contact" class="navbar-link py-2 lg:py-4" @click.native="active=false">
+    <a :href="`mailto:${$config.contactEmail}`" title="Contact" class="navbar-link py-2 lg:py-4" @click.native="active=false">
       <img
         src="~/assets/images/nav-contact.png"
         alt="Logo contact"
         class="mx-auto h-16 xl:h-32 w-auto"
       />
       Contact
-    </nuxt-link>
+    </a>
   </nav>
 </div>
 </template>
