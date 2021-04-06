@@ -11,7 +11,10 @@
         <span class="justify-self-start">2021 © Manen. Tous droits réservés.</span>
         <SocialLinks />
         <span>
-          Développé par <a class="hover:underline" href="https://www.linkedin.com/in/maillot-mickael/" target="_blank">Mickaël Maillot <open-in-new-icon /></a>
+          Développé par 
+          <a class="hover:underline" href="https://www.linkedin.com/in/maillot-mickael/" target="_blank">
+            Mickaël Maillot <open-in-new-icon />
+          </a>
         </span>
       </div>
     </div>

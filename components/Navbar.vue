@@ -1,5 +1,5 @@
 <template>
-<div class="navbar ml-auto">
+<div id="navbar-desktop" class="navbar ml-auto">
   <nav
     class="space-x-12 bg-primary text-white flex flex-row items-center justify-around flex-nowrap"
   >

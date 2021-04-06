@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="navbar-mobile">
   <button @click="active = true" class="text-2xl p-4 rounded z-30 text-white lg:p-4 lg:text-4xl">
     <menu-icon />
   </button>
