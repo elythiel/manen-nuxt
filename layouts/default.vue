@@ -10,12 +10,9 @@
       <div class="flex mt-auto items-center justify-between bg-primary py-2 px-8 text-white space-x-4 flex-col lg:flex-row">
         <span class="justify-self-start">2021 © Manen. Tous droits réservés.</span>
         <SocialLinks />
-        <span>
-          Développé par 
-          <a class="hover:underline" href="https://www.linkedin.com/in/maillot-mickael/" target="_blank">
-            Mickaël Maillot <open-in-new-icon />
-          </a>
-        </span>
+        <a class="text-3xl hover:underline" href="https://github.com/elythiel/manen-nuxt" target="_blank">
+          <github-icon />
+        </a>
       </div>
     </div>
 

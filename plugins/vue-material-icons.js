@@ -9,6 +9,7 @@ import CloseIcon from 'vue-material-design-icons/Close.vue'
 import OpenInNewIcon from 'vue-material-design-icons/OpenInNew.vue'
 import MenuIcon from 'vue-material-design-icons/Menu.vue'
 import FacebookIcon from 'vue-material-design-icons/Facebook.vue'
+import GithubIcon from 'vue-material-design-icons/Github.vue'
 
 export default function materialIcons() {
     Vue.component('youtube-icon', YoutubeIcon)
@@ -18,4 +19,5 @@ export default function materialIcons() {
     Vue.component('open-in-new-icon', OpenInNewIcon)
     Vue.component('menu-icon', MenuIcon)
     Vue.component('facebook-icon', FacebookIcon)
+    Vue.component('github-icon', GithubIcon)
 }
