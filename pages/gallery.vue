@@ -60,5 +60,10 @@ export default {
       this.$redrawVueMasonry();
     }
   },
+  head() {
+    return {
+      title: `Galerie - ${this.$config.siteTitle}`,
+    }
+  }
 };
 </script>

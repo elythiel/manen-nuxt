@@ -52,6 +52,11 @@ export default {
       .sortBy("release", "desc")
       .fetch();
   },
+  head() {
+    return {
+      title: `Albums - ${this.$config.siteTitle}`,
+    }
+  }
 };
 </script>
 

@@ -1,21 +1,25 @@
 export default {
-  //ssr: false,
   target: 'static',
 
   publicRuntimeConfig: {
-    contactEmail: 'manengroupe@gmail.com'
+    contactEmail: 'manengroupe@gmail.com',
+    siteTitle: 'Manen',
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'manen-nuxt',
+    title: 'Site du groupe Manen',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Le groupe Månen est constitué de deux frères à la composition et d\'un ami à l\'écriture. Månen existe depuis une dizaine d\'années, ils se produisent sur de petites scènes en région parisienne.'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

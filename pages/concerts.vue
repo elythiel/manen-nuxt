@@ -6,7 +6,7 @@
       class="mx-auto h-auto w-full md:h-44 md:w-auto"
     />
     
-    <p v-if="empty" class="text-2xl text-center my-24 text-secondary-dark">
+    <p v-if="empty" class="text-2xl text-center my-12 text-secondary-dark">
       Aucun concert n'est prévu pour le moment :(
     </p>
 
@@ -72,6 +72,11 @@ export default {
   methods: {
     formatDate(date) {
       return new Date(date).toLocaleDateString()
+    }
+  },
+  head() {
+    return {
+      title: `Concerts - ${this.$config.siteTitle}`,
     }
   }
 };
