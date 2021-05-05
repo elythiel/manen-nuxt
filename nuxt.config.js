@@ -30,7 +30,10 @@ export default {
       { property: "og:image:height", content: "1200" }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon-16.png', size: '16x16' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon-32.png', size: '32x32' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon-96.png', size: '96x96' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon-128.png', size: '128x128' }
     ]
   },
 
