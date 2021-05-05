@@ -11,7 +11,12 @@
         <span class="text-center lg:text-left">2021 © Manen. Tous droits réservés.</span>
         <SocialLinks class="justify-center" />
         <span class="text-center lg:text-right">
-          <a class="text-3xl hover:underline" href="https://github.com/elythiel/manen-nuxt" target="_blank">
+          <a href="https://github.com/elythiel/manen-nuxt"
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="text-3xl hover:underline"
+            title="GitHub (nouvel onglet)"
+            >
             <github-icon />
           </a>
         </span>
