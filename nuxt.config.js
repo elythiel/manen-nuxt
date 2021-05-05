@@ -14,7 +14,7 @@ export default {
   head: {
     title: 'Site du groupe Manen',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
