@@ -39,7 +39,7 @@ export default {
     return {
       meta: [
         { hid: 'og:title', property: 'og:title', content: 'Manen' },
-        { hid: 'og:description', property: 'og:description', content: 'Le groupe Månen existe depuis une dizaine d\'années et se produisent sur de petites scènes en région parisienne.' },
+        { hid: 'og:description', property: 'og:description', content: 'Le groupe Månen existe depuis une dizaine d\'années et se produit sur de petites scènes en région parisienne.' },
         { hid: 'og:image', property: 'og:image', content: process.env.baseUrl + '/images/og-image.jpg'},
         { hid: 'og:image:width', property: "og:image:width", content: "1200" },
         { hid: 'og:image:height', property: "og:image:height", content: "1200" }
