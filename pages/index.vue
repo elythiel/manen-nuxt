@@ -3,6 +3,7 @@
     <img
       src="~/assets/images/band.jpg"
       alt="Photo des membres de Manen"
+      width="1536" height="802"
       class="mb-4 md:mb-12"
     />
     <div class="py-4 md:px-8 md:my-12">
@@ -34,7 +35,7 @@
     </div>
 
     <div class="mx-auto w-full md:w-1/2">
-      <Youtube id="hYsNfLw-sgo" />
+      <Youtube id="hYsNfLw-sgo" title="Entendues perdues" />
     </div>
   </div>
 </template>

@@ -8,7 +8,7 @@
         {{ album.title }}
         <Modal v-if="album.youtube" :frame="false">
           <template v-slot:button>
-            <youtube-icon class="text-3xl" />
+            <youtube-icon class="text-3xl" :title="album.title" />
           </template>
           <youtube :list="true" :id="album.youtube" />
         </Modal>

@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper">
     <iframe
+      :title="title"
       class="mx-auto"
       width="560"
       height="315"
@@ -20,6 +21,7 @@ export default {
       type: Boolean,
       default: false,
     },
+    title: String
   },
   methods: {
     getSrc() {
