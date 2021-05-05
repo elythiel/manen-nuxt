@@ -17,6 +17,7 @@
           id="header-logo"
           src="~/assets/images/logo-sword.png"
           alt="Logo Manen"
+          width="800" height="212"
           class="block w-auto h-16 lg:h-24 xl:h-32"
         />
       </nuxt-link>

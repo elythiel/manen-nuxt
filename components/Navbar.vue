@@ -5,6 +5,8 @@
   >
     <img
       src="~/assets/images/dragon-left.png"
+      alt="Navbar dragon"
+      width="142" height="224"
       class="header-dragon hidden h-28 w-auto md:block"
     />
 
@@ -12,6 +14,7 @@
       <img
         src="~/assets/images/nav-gallery.png"
         alt="Logo galerie"
+        width="128" height="128"
         class="mx-auto h-16 w-auto hidden md:block"
       />
       Galerie
@@ -20,6 +23,7 @@
       <img
         src="~/assets/images/nav-albums.png"
         alt="Logo albums"
+        width="128" height="128"
         class="mx-auto h-16 w-auto hidden md:block"
       />
       Albums
@@ -28,6 +32,7 @@
       <img
         src="~/assets/images/nav-concerts.png"
         alt="Logo concerts"
+        width="128" height="128"
         class="mx-auto h-16 w-auto hidden md:block"
       />
       Concerts
@@ -36,6 +41,7 @@
       <img
         src="~/assets/images/nav-contact.png"
         alt="Logo contact"
+        width="128" height="128"
         class="mx-auto h-16 w-auto hidden md:block"
       />
       Contact
@@ -43,6 +49,8 @@
 
     <img
       src="~/assets/images/dragon-right.png"
+      alt="Navbar dragon"
+      width="142" height="224"
       class="header-dragon hidden h-28 w-auto md:block"
     />
   </nav>
