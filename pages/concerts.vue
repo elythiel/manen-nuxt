@@ -78,10 +78,8 @@ export default {
     return {
       title: `Concerts - ${this.$config.siteTitle}`,
       meta: [
-        { hid: 'og:title', name: 'og:title', content: `Galerie - ${this.$config.siteTitle}` },
-        { hid: 'og:description', name: 'og:description', content: 'Liste des concerts du groupe Manen' },
-        { hid: 'twitter:title', name: 'twitter:title', content: `Concerts - ${this.$config.siteTitle}` },
-        { hid: 'twitter:description', name: 'twitter:description', content: 'Liste des concerts du groupe Manen' }
+        { hid: 'og:title', property: 'og:title', content: `Galerie - ${this.$config.siteTitle}` },
+        { hid: 'og:description', property: 'og:description', content: 'Liste des concerts du groupe Manen' }
       ]
     }
   }

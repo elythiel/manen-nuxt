@@ -64,10 +64,8 @@ export default {
     return {
       title: `Galerie - ${this.$config.siteTitle}`,
       meta: [
-        { hid: 'og:title', name: 'og:title', content: `Galerie - ${this.$config.siteTitle}` },
-        { hid: 'og:description', name: 'og:description', content: 'Galerie d\'images du groupe Manen' },
-        { hid: 'twitter:title', name: 'twitter:title', content: `Galerie - ${this.$config.siteTitle}` },
-        { hid: 'twitter:description', name: 'twitter:description', content: 'Galerie d\'images du groupe Manen' }
+        { hid: 'og:title', property: 'og:title', content: `Galerie - ${this.$config.siteTitle}` },
+        { hid: 'og:description', property: 'og:description', content: 'Galerie d\'images du groupe Manen' }
       ]
     }
   }
