@@ -1,7 +1,7 @@
 <template>
   <div class="text-justify">
     <img
-      src="~/assets/images/band.png"
+      src="~/assets/images/band.jpg"
       alt="Photo des membres de Manen"
       class="mb-4 md:mb-12"
     />
