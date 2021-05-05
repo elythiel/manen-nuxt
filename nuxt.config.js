@@ -6,6 +6,10 @@ export default {
     siteTitle: 'Manen',
   },
 
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  },
+  
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Site du groupe Manen',
@@ -20,14 +24,6 @@ export default {
         name: 'description',
         content: 'Le groupe Månen est constitué de deux frères à la composition et d\'un ami à l\'écriture. Månen existe depuis une dizaine d\'années, ils se produisent sur de petites scènes en région parisienne.'
       },
-      { hid: 'og:title', name: 'og:title', content: 'Manen' },
-      { hid: 'twitter:title', name: 'twitter:title', content: 'Manen' },
-      { hid: 'og:description', name: 'og:description', content: 'Le groupe Månen existe depuis une dizaine d\'années et se produisent sur de petites scènes en région parisienne.' },
-      { hid: 'twitter:description', name: 'twitter:description', content: 'Le groupe Månen existe depuis une dizaine d\'années et se produisent sur de petites scènes en région parisienne.' },
-      { hid: 'og:image', name: 'og:image', content: '/images/og-image.jpg'},
-      { hid: 'twitter:image', name: 'twitter:image', content: '/images/og-image.jpg'},
-      { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "1200" }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon-16.png', size: '16x16' },
