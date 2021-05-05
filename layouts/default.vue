@@ -38,14 +38,11 @@ export default {
   head() {
     return {
       meta: [
-        { hid: 'og:title', name: 'og:title', content: 'Manen' },
-        { hid: 'og:description', name: 'og:description', content: 'Le groupe Månen existe depuis une dizaine d\'années et se produisent sur de petites scènes en région parisienne.' },
-        { hid: 'og:image', name: 'og:image', content: process.env.baseUrl + '/images/og-image.jpg'},
+        { hid: 'og:title', property: 'og:title', content: 'Manen' },
+        { hid: 'og:description', property: 'og:description', content: 'Le groupe Månen existe depuis une dizaine d\'années et se produisent sur de petites scènes en région parisienne.' },
+        { hid: 'og:image', property: 'og:image', content: process.env.baseUrl + '/images/og-image.jpg'},
         { hid: 'og:image:width', property: "og:image:width", content: "1200" },
-        { hid: 'og:image:height', property: "og:image:height", content: "1200" },
-        { hid: 'twitter:title', name: 'twitter:title', content: 'Manen' },
-        { hid: 'twitter:description', name: 'twitter:description', content: 'Le groupe Månen existe depuis une dizaine d\'années et se produisent sur de petites scènes en région parisienne.' },
-        { hid: 'twitter:image', name: 'twitter:image', content: process.env.baseUrl + '/images/og-image.jpg'}
+        { hid: 'og:image:height', property: "og:image:height", content: "1200" }
       ]
     }
   }
