@@ -12,7 +12,7 @@
       >
         <div class="relative flex flex-col w-5/6 md:w-1/2 max-h-5/6 between bg-white p-4 lg:py-10 lg:px-12 shadow-lg text-secondary-dark">
           <button
-            class="absolute top-0 right-0 p-4"
+            class="modal-close absolute top-0 right-0 p-4"
             @click="close"
           >
             <close-icon />
@@ -64,7 +64,7 @@ export default {
     },
     close(event) {
       event.preventDefault();
-      if (event.target.classList.contains("modal-wrapper")) {
+      if (event.target.classList.contains("modal-wrapper") || event.target.closest('.modal-close')) {
         this.active = false;
       }
     },
