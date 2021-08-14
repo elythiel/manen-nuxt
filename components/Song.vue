@@ -13,7 +13,7 @@
         <template v-slot:button>
           <youtube-icon />
         </template>
-        <youtube :id="song.youtube" :title="song.title" />
+        <youtube :url="song.youtube" />
       </Modal>
 
       <a

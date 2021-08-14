@@ -10,7 +10,7 @@
           <template v-slot:button>
             <youtube-icon class="text-3xl" :title="album.title"/>
           </template>
-          <youtube :list="true" :id="album.youtube"/>
+          <youtube :url="album.youtube"/>
         </Modal>
         <a v-if="album.spotify" :href="album.spotify" target="_blank" title="Ecouter sur spotify">
           <spotify-icon class="text-3xl"/>
