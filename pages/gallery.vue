@@ -6,7 +6,10 @@
       class="mx-auto h-auto w-full md:h-44 md:w-auto"
     />
 
-    <p v-if="empty" class="text-2xl text-center my-12 text-secondary-dark">
+    <p v-if="$fetchState.pending" class="text-2xl text-center my-12 text-secondary-dark">
+      Récupération des images
+    </p>
+    <p v-else-if="$fetchState.error" class="text-2xl text-center my-12 text-secondary-dark">
       Aucune image n'est disponible pour le moment :(
     </p>
 
@@ -23,7 +26,7 @@
           :key="index"
           v-for="(image, index) in images"
         >
-          <GalleryImage :src="image.path" />
+          <GalleryImage :src="image.image" />
         </div>
       </div>
     </no-ssr>
@@ -39,23 +42,16 @@ export default {
   },
   data() {
     return {
-      images: [],
-      empty: false
+      images: []
     };
   },
   async fetch() {
-    const context = require.context("@/assets/gallery", true, /^.*\.(?:jpg|png)$/);
-    context.keys().forEach((key) =>
-      this.images.push({
-        key: key,
-        path: context(key),
-      })
-    );
+    this.images = await fetch(
+      process.env.apiBaseUrl + '/gallery',
+      {mode: 'cors'}
+    ).then(res => res.json());
   },
   mounted() {
-    if(this.images.length == 0) {
-      this.empty = true;
-    }
     if (typeof this.$redrawVueMasonry === "function") {
       this.$redrawVueMasonry();
     }
