@@ -12,17 +12,16 @@
     "@nuxt/content": "^1.11.1",
     "@nuxtjs/axios": "^5.12.5",
     "core-js": "^3.8.2",
-    "nuxt": "^2.14.12",
+    "nuxt": "^2.15.8",
     "portal-vue": "^2.1.7",
-    "vue-masonry": "^0.12.0",
+    "vue-masonry": "^0.13.0",
     "vue-material-design-icons": "^4.11.0"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^3.4.2",
-    "@tailwindcss/postcss7-compat": "npm:@tailwindcss/postcss7-compat",
-    "autoprefixer": "^9",
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "autoprefixer": "^10",
     "nuxt-gsap-module": "^1.2.1",
-    "postcss": "^7",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "postcss": "^8",
+    "tailwindcss": "^2.2.7"
   }
 }
