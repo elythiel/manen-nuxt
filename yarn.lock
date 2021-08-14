@@ -6517,7 +6517,7 @@ num2fraction@^1.2.2:
   resolved "https://registry.yarnpkg.com/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
   integrity sha1-b2gragJ6Tp3fpFZM0lidHU5mnt4=
 
-nuxt-gsap-module@^1.2.1:
+nuxt-gsap-module@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/nuxt-gsap-module/-/nuxt-gsap-module-1.4.0.tgz#8b2ac77317e4798a3a1df2d35c907f708c92d1d0"
   integrity sha512-fnAje9u9bmGMUj90BCinNS3zZZeXFHqcD9DwnZ5rJJJ36XF64iUwOM9aWgTCrx88cMTB7HHL9y30k0d6HxvPLg==
