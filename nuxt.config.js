@@ -7,9 +7,10 @@ export default {
   },
 
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    apiBaseUrl: process.env.API_BASE_URL || 'http://localhost:8000'
   },
-  
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Site du groupe Manen',
@@ -73,7 +74,7 @@ export default {
   // GSAP configuration
   gsap: {
     extraPlugins: {
-      scrollTrigger: true 
+      scrollTrigger: true
     }
   },
 

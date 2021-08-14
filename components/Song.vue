@@ -6,7 +6,7 @@
         <template v-slot:button>
           <text-icon />
         </template>
-        <nuxt-content :document="lyrics" />
+        <div v-html="song.lyrics"></div>
       </LyricsModal>
 
       <Modal v-if="song.youtube" :frame="false">
@@ -31,18 +31,12 @@
 <script>
 export default {
   props: {
-    song: Object,
+    song: Object
   },
   data() {
     return {
-      lyricsActive: false,
-      lyrics: null,
+      lyricsActive: false
     };
-  },
-  async fetch() {
-    if (this.song.lyrics) {
-      this.lyrics = await this.$content("lyrics/" + this.song.lyrics).fetch();
-    }
-  },
+  }
 };
 </script>
