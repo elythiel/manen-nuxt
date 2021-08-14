@@ -22,11 +22,11 @@
         />
       </nuxt-link>
 
-      <navbar class="hidden xl:block font-playfair uppercase text-center text-xl" />
-      <navbar-mobile class="block xl:hidden font-playfair uppercase text-center text-xl ml-auto" />
+      <navbar class="hidden xl:block font-playfair uppercase text-center text-xl"/>
+      <navbar-mobile class="block xl:hidden font-playfair uppercase text-center text-xl ml-auto"/>
 
       <span class="social-links absolute top-0 right-0  m-4 hidden text-3xl text-white">
-        <SocialLinks />
+        <SocialLinks/>
       </span>
 
     </header>
@@ -48,31 +48,26 @@ export default {
       }
     },
     isHome() {
-      return this.$nuxt.$route.path == "/";
+      return this.$nuxt.$route.path === "/";
     },
     animate() {
       this.$gsap.from('#header-logo', {
         opacity: 0,
         x: '100%'
       })
-        // navbar links can be found in Navbar component
-      if(document.getElementById('navbar-desktop')) {
-        this.$gsap.from('.navbar-link', {
+      // navbar links can be found in Navbar component
+      if (document.getElementById('navbar-desktop')) {
+        this.$gsap.from('.navbar-link, .header-dragon', {
           opacity: 0,
           x: 200,
           stagger: 0.1,
-          delay: 0.25
-        })
-        this.$gsap.from('.header-dragon', {
-          opacity: 0,
-          y: 200,
           delay: 0.25
         })
       }
     }
   },
   mounted() {
-    if(!this.isReduced) {
+    if (!this.isReduced) {
       this.animate()
     }
     // handle scroll event
@@ -97,12 +92,15 @@ export default {
 .header.h-screen {
   @apply flex-col items-center justify-end px-0;
 }
+
 .header.h-screen .logo {
   @apply w-full my-auto md:w-auto;
 }
+
 .header.h-screen .logo img {
   @apply w-full md:w-2/3 h-auto mx-auto;
 }
+
 .header.h-screen .social-links {
   @apply block;
 }
