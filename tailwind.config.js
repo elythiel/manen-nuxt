@@ -16,7 +16,8 @@ module.exports = {
       gray: colors.trueGray,
       transparent: 'transparent',
       primary: {
-        DEFAULT: '#76939d'
+        DEFAULT: '#76939d',
+        light: '#b8c8ce'
       },
       secondary: {
         dark: '#776a52',
