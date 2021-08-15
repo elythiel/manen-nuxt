@@ -1,7 +1,11 @@
 <template>
   <div>
-    <p v-if="$fetchState.pending" class="text-center">Récupération des albums</p>
-    <p v-else-if="$fetchState.error" class="text-center">Une erreur est survenue :(</p>
+    <p v-if="$fetchState.pending" class="text-2xl text-center my-12 text-secondary-dark">
+      Récupération des albums
+    </p>
+    <p v-else-if="$fetchState.error" class="text-2xl text-center my-12 text-secondary-dark">
+      Une erreur est survenue :(
+    </p>
 
     <div v-for="(album, index) in albums" :key="index">
       <h2 class="text-2xl text-primary mb-10">
