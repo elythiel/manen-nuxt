@@ -23,7 +23,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Le groupe Månen est constitué de deux frères à la composition et d\'un ami à l\'écriture. Månen existe depuis une dizaine d\'années, ils se produisent sur de petites scènes en région parisienne.'
+        content: 'Le groupe de musique Månen existe depuis une dizaine d\'années et se produit sur de petites scènes en région parisienne. Månen est constitué de deux frères à la composition et d\'un ami à l\'écriture.'
       },
     ],
     link: [
