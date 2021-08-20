@@ -5,8 +5,11 @@
       alt="Logo concerts"
       class="mx-auto h-auto w-full md:h-44 md:w-auto"
     />
-    
-    <p v-if="empty" class="text-2xl text-center my-12 text-secondary-dark">
+
+    <p v-if="$fetchState.pending" class="text-2xl text-center my-12 text-secondary-dark">
+      Récupération des concerts
+    </p>
+    <p v-else-if="$fetchState.error" class="text-2xl text-center my-12 text-secondary-dark">
       Aucun concert n'est prévu pour le moment :(
     </p>
 
@@ -18,24 +21,26 @@
         horizontal-order="true"
         class="mt-10"
       >
-        <div v-masonry-tile v-for="(concert, index) in concerts" :key="index" class="masonry-item w-full md:w-1/2 lg:w-1/4 p-2">
-          <div class="bg-white p-8">
-            <p> {{ formatDate(concert.date) }} </p>
-            <h3 class="text-xl mb-3"> {{ concert.title }} </h3>
+        <div v-masonry-tile
+             v-for="(concert, index) in concerts"
+             :key="index"
+             class="masonry-item w-full md:w-1/2 lg:w-1/4 p-2"
+        >
+          <div class="bg-white p-8"
+               :class="{ 'text-primary-light': !isFuture(concert.date) }"
+          >
+            <span> {{ formatDate(concert.date) }} </span>
+            <h3 class="text-xl mb-3">{{ concert.title }}</h3>
 
-            <hr class="border-primary mb-3" />
+            <hr class="border-primary mb-3"/>
 
-            <p v-if="!concert.location.link" class="mb-3"> {{ concert.location.title }} </p>
-            <a v-if="concert.location.link" 
-              :href="concert.location.link ? concert.location.link : '#'"
-              class="inline-block underline hover:no-underline mb-3" 
-              > {{ concert.location.title }} <open-in-new-icon /></a>
+            <p v-if="concert.location" class="mb-3"> {{ concert.location }} </p>
             <br>
-            <a v-if="concert.link" 
-              :href="concert.link"
-              target="_blank"
-              class="inline-block px-4 py-1 border border-primary transition-colors hover:bg-black hover:bg-opacity-10"
-              >
+            <a v-if="concert.moreLink && isFuture(concert.date)"
+               :href="concert.moreLink"
+               target="_blank"
+               class="inline-block px-4 py-1 border border-primary transition-colors hover:bg-black hover:bg-opacity-10"
+            >
               Plus d'infos
             </a>
           </div>
@@ -54,15 +59,14 @@ export default {
   },
   data() {
     return {
-      concerts: [],
-      empty: false
+      concerts: []
     };
   },
   async fetch() {
-    this.concerts = await this.$content("concerts").sortBy('date', 'desc').fetch()
-    if(!this.concerts.length) {
-      this.empty = true
-    }
+    this.concerts = await fetch(
+      process.env.apiBaseUrl + '/concerts',
+      {mode: 'cors'}
+    ).then(res => res.json());
   },
   mounted() {
     if (typeof this.$redrawVueMasonry === "function") {
@@ -72,14 +76,17 @@ export default {
   methods: {
     formatDate(date) {
       return new Date(date).toLocaleDateString()
+    },
+    isFuture(date) {
+      return new Date(date) > new Date();
     }
   },
   head() {
     return {
       title: `Concerts - ${this.$config.siteTitle}`,
       meta: [
-        { hid: 'og:title', property: 'og:title', content: `Galerie - ${this.$config.siteTitle}` },
-        { hid: 'og:description', property: 'og:description', content: 'Liste des concerts du groupe Manen' }
+        {hid: 'og:title', property: 'og:title', content: `Galerie - ${this.$config.siteTitle}`},
+        {hid: 'og:description', property: 'og:description', content: 'Liste des concerts du groupe Manen'}
       ]
     }
   }

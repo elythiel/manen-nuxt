@@ -35,7 +35,7 @@
     </div>
 
     <div class="mx-auto w-full md:w-1/2">
-      <Youtube id="hYsNfLw-sgo" title="Entendues perdues" />
+      <Youtube url="https://youtu.be/EIv2wnMjKkA" />
     </div>
   </div>
 </template>

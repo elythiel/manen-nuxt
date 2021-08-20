@@ -1,40 +1,27 @@
 <template>
-  <div class="wrapper">
-    <iframe
-      :title="title"
-      class="mx-auto"
-      width="560"
-      height="315"
-      frameborder="0"
-      :src="getSrc()"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+  <div class="wrapper" v-html="oembed.html">
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    id: String,
-    list: {
-      type: Boolean,
-      default: false,
-    },
-    title: String
+    url: String
   },
-  methods: {
-    getSrc() {
-      let src = this.list
-        ? "https://youtube.com/embed/videoseries?list="
-        : "https://www.youtube.com/embed/";
-      return src + this.id;
-    },
+  data() {
+    return {
+      oembed: Object
+    };
   },
+  async fetch() {
+    this.oembed = await fetch(
+      'https://youtube.com/oembed?url=' + this.url
+    ).then(res => res.json());
+  }
 };
 </script>
 
-<style lang="postcss" scoped>
+<style lang="postcss">
 .wrapper {
   @apply overflow-hidden relative h-0;
   padding-bottom: 56.25%;

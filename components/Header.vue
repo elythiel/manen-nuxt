@@ -51,17 +51,23 @@ export default {
       return this.$nuxt.$route.path === "/";
     },
     animate() {
-      this.$gsap.from('#header-logo', {
+      this.$gsap.fromTo('#header-logo', {
         opacity: 0,
-        x: '100%'
+        y: '-100%'
+      }, {
+        opacity: 1,
+        y: 0,
+        duration: 1
       })
       // navbar links can be found in Navbar component
       if (document.getElementById('navbar-desktop')) {
-        this.$gsap.from('.navbar-link, .header-dragon', {
+        this.$gsap.fromTo('.navbar-link, .header-dragon', {
           opacity: 0,
-          x: 200,
-          stagger: 0.1,
-          delay: 0.25
+          x: '200px'
+        }, {
+          opacity: 1,
+          x: 0,
+          stagger: 0.1
         })
       }
     }

@@ -7,9 +7,10 @@ export default {
   },
 
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    apiBaseUrl: process.env.API_BASE_URL || 'http://localhost:8000'
   },
-  
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Site du groupe Manen',
@@ -22,7 +23,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Le groupe Månen est constitué de deux frères à la composition et d\'un ami à l\'écriture. Månen existe depuis une dizaine d\'années, ils se produisent sur de petites scènes en région parisienne.'
+        content: 'Le groupe de musique Månen existe depuis une dizaine d\'années et se produit sur de petites scènes en région parisienne. Månen est constitué de deux frères à la composition et d\'un ami à l\'écriture.'
       },
     ],
     link: [
@@ -73,7 +74,7 @@ export default {
   // GSAP configuration
   gsap: {
     extraPlugins: {
-      scrollTrigger: true 
+      scrollTrigger: true
     }
   },
 
